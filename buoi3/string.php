@@ -24,6 +24,12 @@
 	echo "<br>";
 	echo substr_count(substr($myString1, strpos($myString1, "Hieu"), strlen("Hieu")), "n");
 	echo "<br>";
+	echo substr_count($myString1, "n");
+	echo "<br>";
+	echo strrpos($myString1, " ");
+	echo "<br>";
+	echo strtoupper(substr($myString1, strpos($myString1, " "), strrpos($myString1, " ") - strpos($myString1, " ")));
+	echo "<br>";
 	echo strlen("Hieu");
 	echo "<br>";
 	echo str_replace("Van", "VAN", $myString1);
